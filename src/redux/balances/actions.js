@@ -65,9 +65,15 @@ function asyncWithdraw(value) {
 }
 
 function asyncPurge(value) {
-  return async (dispatch) => {
-    await balancesAPI.purge(value);
-    dispatch(purge());
+  return async (dispatch, getState) => {
+    const { balances } = getState();
+
+    try {
+      dispatch(purge());
+      await balancesAPI.purge(value);
+    } catch (error) {
+      dispatch(deposit(balances));
+    }
   };
 }
 
