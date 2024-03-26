@@ -1,10 +1,1 @@
-function deposit(value) {
-  return {
-    type: 'savings/deposit',
-    payload: {
-      value,
-    },
-  };
-}
-
-export { deposit };
+// @TODO create actions for savings state here

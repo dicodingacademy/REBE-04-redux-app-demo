@@ -1,19 +1,18 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import useInput from '../hooks/useInput';
 import DecimalDisplay from '../components/DecimalDisplay';
 import DecimalInput from '../components/DecimalInput';
 import Button from '../components/Button';
-import { deposit } from '../redux/savings/actions';
 
 function SavingsPage() {
   const [inputValue, onInputValueChange] = useInput(0);
-  const savings = useSelector((state) => state.savings);
+  const savings = 0; // @TODO get savings state from store
 
-  const dispatch = useDispatch();
+  const dispatch = () => {}; // @TODO get dispatch function from store
 
   const onDeposit = () => {
-    dispatch(deposit(inputValue));
+    // @TODO dispatch deposit
+    dispatch();
   };
 
   return (

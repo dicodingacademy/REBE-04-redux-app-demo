@@ -1,33 +1,29 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import Button from '../components/Button';
 import DecimalDisplay from '../components/DecimalDisplay';
 import DecimalInput from '../components/DecimalInput';
 import useInput from '../hooks/useInput';
-import {
-  asyncDeposit, asyncInitial, asyncPurge, asyncWithdraw,
-} from '../redux/balances/actions';
 
 function BalancesPage() {
   const [inputValue, onInputValueChange] = useInput(0);
-  const balances = useSelector((state) => state.balances);
+  const balances = 0; // @TODO get balances state from store
 
-  const dispatch = useDispatch();
+  const dispatch = () => {}; // @TODO get dispatch function from store
 
   useEffect(() => {
-    dispatch(asyncInitial());
+    dispatch(); // @TODO dispatch initial data
   }, []);
 
   const onDeposit = () => {
-    dispatch(asyncDeposit(inputValue));
+    dispatch(); // @TODO dispatch deposit
   };
 
   const onWithdraw = () => {
-    dispatch(asyncWithdraw(inputValue));
+    dispatch(); // @TODO dispatch withdraw
   };
 
   const onPurge = () => {
-    dispatch(asyncPurge());
+    dispatch(); // @TODO dispatch purge
   };
 
   return (
