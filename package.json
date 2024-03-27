@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "store": "node src/redux/store.js",
     "lint": "eslint --ext js,jsx --max-warnings 0"
   },
   "dependencies": {
