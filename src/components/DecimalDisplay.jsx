@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { formatToRupiah } from '../utils';
+
+import { formatToRupiah } from '../utils/index.js';
 
 function DecimalDisplay(props) {
   const { value } = props;

@@ -1,4 +1,4 @@
-import { wait } from './index';
+import { wait } from './index.js';
 
 const balancesAPI = {
   async getBalances() {

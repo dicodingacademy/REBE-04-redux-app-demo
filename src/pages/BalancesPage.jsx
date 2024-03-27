@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import Button from '../components/Button';
-import DecimalDisplay from '../components/DecimalDisplay';
-import DecimalInput from '../components/DecimalInput';
-import useInput from '../hooks/useInput';
+
+import Button from '../components/Button.jsx';
+import DecimalDisplay from '../components/DecimalDisplay.jsx';
+import DecimalInput from '../components/DecimalInput.jsx';
+import useInput from '../hooks/useInput.js';
 
 function BalancesPage() {
   const [inputValue, onInputValueChange] = useInput(0);

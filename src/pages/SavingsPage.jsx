@@ -1,8 +1,8 @@
 import React from 'react';
-import useInput from '../hooks/useInput';
-import DecimalDisplay from '../components/DecimalDisplay';
-import DecimalInput from '../components/DecimalInput';
-import Button from '../components/Button';
+import useInput from '../hooks/useInput.js';
+import DecimalDisplay from '../components/DecimalDisplay.jsx';
+import DecimalInput from '../components/DecimalInput.jsx';
+import Button from '../components/Button.jsx';
 
 function SavingsPage() {
   const [inputValue, onInputValueChange] = useInput(0);

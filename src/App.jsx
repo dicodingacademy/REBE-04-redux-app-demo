@@ -1,9 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import BalancesPage from './pages/BalancesPage';
-import Navigation from './components/Navigation';
-import SavingsPage from './pages/SavingsPage';
-import NotFoundPage from './pages/NotFoundPage';
+
+import BalancesPage from './pages/BalancesPage.jsx';
+import Navigation from './components/Navigation.jsx';
+import SavingsPage from './pages/SavingsPage.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
 
 function App() {
   return (
