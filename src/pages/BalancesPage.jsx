@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Button from '../components/Button';
-import DecimalDisplay from '../components/DecimalDisplay';
-import DecimalInput from '../components/DecimalInput';
-import useInput from '../hooks/useInput';
+
+import Button from '../components/Button.jsx';
+import DecimalDisplay from '../components/DecimalDisplay.jsx';
+import DecimalInput from '../components/DecimalInput.jsx';
+import useInput from '../hooks/useInput.js';
 import {
   asyncDeposit, asyncInitial, asyncPurge, asyncWithdraw,
-} from '../redux/balances/actions';
+} from '../redux/balances/actions.js';
 
 function BalancesPage() {
   const [inputValue, onInputValueChange] = useInput(0);

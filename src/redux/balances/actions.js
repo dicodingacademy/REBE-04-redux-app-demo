@@ -1,4 +1,4 @@
-import { balancesAPI } from '../../utils/api';
+import { balancesAPI } from '../../utils/api.js';
 
 function deposit(value) {
   return {

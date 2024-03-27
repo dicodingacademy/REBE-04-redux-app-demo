@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { balances } from './balances/reducer';
-import { savings } from './savings/reducers';
+
+import { balances } from './balances/reducer.js';
+import { savings } from './savings/reducers.js';
 
 const store = configureStore({
   reducer: {

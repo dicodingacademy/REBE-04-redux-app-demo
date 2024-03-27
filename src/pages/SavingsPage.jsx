@@ -1,10 +1,11 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import useInput from '../hooks/useInput';
-import DecimalDisplay from '../components/DecimalDisplay';
-import DecimalInput from '../components/DecimalInput';
-import Button from '../components/Button';
-import { deposit } from '../redux/savings/actions';
+
+import useInput from '../hooks/useInput.js';
+import DecimalDisplay from '../components/DecimalDisplay.jsx';
+import DecimalInput from '../components/DecimalInput.jsx';
+import Button from '../components/Button.jsx';
+import { deposit } from '../redux/savings/actions.js';
 
 function SavingsPage() {
   const [inputValue, onInputValueChange] = useInput(0);
